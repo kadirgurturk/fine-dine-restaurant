@@ -6,14 +6,22 @@
 .main4{
     
         width: 100%;
-        min-height: 52rem;
+        min-height: 59rem;
         @include m.flex_column;
         justify-content: space-around;
         align-items: center;
         #rightCurve{
             display: none;
         }
+        .images{
+            margin-top: 5rem;
+            #lines{
+                display: none;
+            }
+
+        }
         .events{
+            margin-top: 2.5rem;
             p{
                 text-transform: uppercase;
                 text-align: center;
@@ -49,13 +57,136 @@
         }
 
         .events__info{
-            width: 75%;
+            width: 85%;
+            height: 18rem;
             text-transform: capitalize;
             @include m.flex_column;
             align-items: center;
             justify-content: space-around;
+            margin-bottom: 4rem;
+            h2{
+                font-size: 2.5rem;
+                color: v.$clr-ebonyClay;
+            }
+            p{
+                width: 100%;
+                color: v.$clr-ebonyClay;
+                text-align: center;
+                font-weight: 300;
+                font-size: 1.2rem;
+                line-height: 1.65rem;
+            }
 
+            li{
+                list-style: none;
+                text-decoration: none;
+                a{
+                    @include m.white_a;
+                   text-decoration: none;
+                    padding: 1.5rem 3rem;
+                    font-size: 1.2rem;
+                    width: 18rem;
+                    height: 5rem;
+                }
+              }
 
+        }
+
+        @include media.med {
+            position: relative;
+            #rightCurve{
+                display: block;
+                position: absolute;
+                top:0;
+                left: -30rem;
+                z-index:-1 ;
+            }
+            .images{
+                position: relative;
+                picture{
+                    @include m.shadow
+                }
+                #lines{
+                    display: block;
+                    position: absolute;
+                    top: -30px;
+                    left: -50px;
+                }
+            }
+
+            .events{
+                @include m.flex_row;
+                align-items: center;
+                justify-content: space-between;
+                width: 43rem;
+
+            }
+        }
+
+        @include media.xl{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: min-content;
+            grid-template-areas: "img text" "img tabs";
+
+            .images{
+                grid-area: img;
+                margin-bottom: 20rem;
+                margin-left: 12rem;
+            }
+            .events{
+                grid-area: tabs;
+                @include m.flex_column;
+                align-items: baseline;
+                text-align: left;
+                justify-content: space-around;
+                margin-bottom: 28rem;
+                padding-left: 6.5rem;
+
+                .selected{
+                    position: relative;
+                    opacity: 1;
+    
+                    &::after {
+                        content: "";
+                        z-index: 5;
+                        position: absolute;
+                        background-color: v.$clr-beaver;
+                        height: 1px;
+                        width: 4.8rem;
+                        left: -21rem;
+                        bottom: 20px;
+                    }
+    
+                }
+
+                
+            }
+
+            .events__info{
+                grid-area: text ;
+                margin-top: 13rem;
+                padding-left: 6.5rem;
+                height: 20rem;
+                @include m.flex_column;
+                align-items: baseline;
+                justify-content: space-around;
+                text-align: left;
+                width: 39rem;
+                h2{
+                    font-size: 2.9rem;
+                    color: v.$clr-ebonyClay;
+                }
+                p{
+                    width: 100%;
+                    color: v.$clr-ebonyClay;
+                    text-align: left;
+                    font-weight: 300;
+                    font-size: 1.4rem;
+                    line-height: 1.85rem;
+                }
+            }
+            
         }
 
 }

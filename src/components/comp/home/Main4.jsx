@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { eventItems } from "../../../assets/util";
 import { Link } from "react-router-dom"
+
+import lines from "../../../assets/patterns/pattern-lines.svg"
 import rightCurve from "../../../assets/patterns/pattern-curve-top-right.svg"
 
 
@@ -14,11 +16,14 @@ export const Main4 = () =>{
         <div className="main4" >
             
             <img id="rightCurve" className="curve" src={rightCurve} alt="curve" />
-                <picture>
-                    <source media="(min-width:992px)" srcSet={desk}/>
-                    <source media="(min-width:768px)" srcSet={tablet}/>
-                    <img src={mobile}/>
-                </picture>
+                <div className="images">
+                    <picture>
+                        <source media="(min-width:992px)" srcSet={desk}/>
+                        <source media="(min-width:768px)" srcSet={tablet}/>
+                        <img src={mobile}/>
+                    </picture>
+                    <img src={lines} id="lines" alt="lines" />  
+                </div>
                 <div className="events">
                     {eventItems.map((ıtem,index) => {
                         return(

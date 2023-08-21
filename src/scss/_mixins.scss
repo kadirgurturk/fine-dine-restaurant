@@ -27,6 +27,7 @@
 @mixin a{
     display: inline-block;
     padding: 2.5rem 4.5rem;
+    text-decoration: none;
     font-size: 1.4rem;
     width: 24rem;
     height: 6.4rem;
@@ -47,11 +48,11 @@
 
 @mixin white_a{
     border: 1px solid black;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     &:hover{
-        background-color: black;
-        color: white;
+        background-color: white;
+        color: black;
     }
 }
 
