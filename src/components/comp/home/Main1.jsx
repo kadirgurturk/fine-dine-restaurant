@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom"
-import logo1 from "../../../assets/homepage/hero-bg-mobile.jpg"
-
 
 export const Main1 = () =>{    
 

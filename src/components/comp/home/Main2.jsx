@@ -26,7 +26,7 @@ export const Main2 = () =>{
                         <img src={enjoyableMobil}  />
                     </picture>
                 </div>
-                <img id="rightCurve"   className="curve" src={rightCurve} alt="curve" />
+                <img id="rightCurve" className="curve" src={rightCurve} alt="curve" />
                 
                 <div className="about__text">
                     <img id="divide-up" className="divide" src={divide} alt="divide" />

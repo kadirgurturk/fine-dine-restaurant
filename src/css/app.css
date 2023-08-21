@@ -336,6 +336,93 @@
     margin-bottom: 0.2rem;
   }
 }
+@media screen and (min-width: 1200px) {
+  .main3 {
+    min-height: 100vh;
+    text-align: left;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .main3 .menu__content {
+    align-items: baseline;
+    height: 18rem;
+    margin-bottom: 0.4rem;
+    width: 30%;
+  }
+  .main3 .menu__content h2 {
+    font-size: 3rem;
+    margin-bottom: 0.8rem;
+    line-height: 3.3rem;
+  }
+  .main3 .menu__content p {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+  }
+  .main3 .menu__list {
+    width: 50%;
+  }
+  .main3 .menu__list .menu__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 10rem;
+    width: 70%;
+    margin-bottom: 1rem;
+  }
+}
+
+.main4 {
+  width: 100%;
+  min-height: 52rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.main4 #rightCurve {
+  display: none;
+}
+.main4 .events p {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 200%;
+  letter-spacing: 2px;
+  opacity: 0.35;
+  margin-bottom: 1.6rem;
+}
+.main4 .events p:hover {
+  cursor: pointer;
+}
+.main4 .events .selected {
+  position: relative;
+  opacity: 1;
+}
+.main4 .events .selected::after {
+  content: "";
+  position: absolute;
+  background-color: hsl(27, 22%, 51%);
+  height: 1px;
+  width: 4.8rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main4 .events__info {
+  width: 75%;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
 * {
   font-family: "League Spartan", sans-serif;
   margin: 0;

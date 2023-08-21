@@ -119,7 +119,40 @@
         }
 
         @include media.xl{
-
+            min-height: 100vh;
+            text-align: left;
+            width: 100vw;
+            @include m.flex_row;
+            justify-content:space-around;
+            align-items: center;
+            .menu__content{
+                align-items: baseline;
+                height: 18rem;
+                margin-bottom: 0.4rem;
+                width: 30%;
+                h2{
+                    font-size: 3rem;
+                    margin-bottom: .8rem;
+                    line-height: 3.3rem;
+                }
+                p{
+                    font-size: 1.3rem;
+                    line-height: 1.6rem;
+                }
+            }
+            .menu__list{
+                width: 50%;
+                .menu__item{
+                    @include m.flex_row;
+                    align-items: center;
+                    justify-content: space-between;
+                    height: 10rem;
+                    width: 70%;
+                    margin-bottom: 1rem;
+                   
+                }
+    
+            }
 
         }
 
