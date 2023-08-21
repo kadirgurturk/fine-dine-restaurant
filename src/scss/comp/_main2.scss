@@ -1,0 +1,149 @@
+@use "../mixins" as m;
+@use "../variable" as v;
+@use "../media" as media;
+
+
+.main2{
+    position: relative;
+    min-height: 91rem;
+
+    .containers{   
+     position: absolute;
+     top: -65px;    
+        .container{
+            z-index: 3;
+            width: 100vw;
+            height: 45rem;
+            text-align: center;
+            .about__text{
+                height: 14rem;
+                @include m.flex_column;
+                justify-content: space-around;
+                align-items: center;
+                width: 75%;
+                h2{
+                    font-weight: 600;
+                    font-size: 2.4rem;
+                    color: v.$clr-ebonyClay;
+                    line-height: 2.9rem;
+                }
+                p{
+                    line-height: 1.8rem;
+                    font-weight: 300;
+                    font-size: 1.4rem;
+                
+                }
+            }
+    
+            .curve{
+                display: none;
+            }
+            #lines{
+                display: none;
+            }
+            @include m.flex_column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        }
+
+        @include media.med {
+           .containers{
+                .container{
+                    .curve{
+                        display: block;
+                        position: absolute;
+                        z-index: 1;
+                    }
+
+                    #rightCurve{
+                        left: 0;
+                    }
+
+                    #leftCurve{
+                        right: 0;
+                    }
+        
+                    .images{
+                        position: relative;
+                        #lines{
+                            display: block;
+                            position: absolute;
+                            z-index: 4;
+                            right: -25px;
+                            top: 85px;
+                        }
+                    }
+                }
+           }
+            
+        }
+
+        @include media.xl{
+            
+            .containers{
+                .up{
+                    .about__img{
+                        position: absolute;
+                        top: -15px;
+                        left: 100px;
+                    }
+
+                    .about__text{
+                        align-items: baseline;
+                        text-align: left;
+                        position: absolute;
+                        height: 20rem;;
+                        width: 30%;
+                        right: 230px;
+                        top: 200px;
+                        h2{
+                            font-weight: 600;
+                            font-size: 2.6rem;
+                            color: v.$clr-ebonyClay;
+                            line-height: 3.2rem;
+                        }
+                        p{
+                            line-height: 1.9rem;
+                            font-weight: 300;
+                            font-size: 1.6rem;
+                        
+                        }
+                    }
+                }
+
+                .down{
+                    .about__img{
+                        position: absolute;
+                        bottom : -110px;
+                        right: 100px;
+                    }
+
+                    .about__text{
+                        align-items: baseline;
+                        text-align: left;
+                        position: absolute;
+                        height: 20rem;;
+                        width: 30%;
+                        left: 140px;
+                        bottom: 200px;
+                        h2{
+                            font-weight: 600;
+                            font-size: 2.6rem;
+                            color: v.$clr-ebonyClay;
+                            line-height: 3.2rem;
+                        }
+                        p{
+                            line-height: 1.9rem;
+                            font-weight: 300;
+                            font-size: 1.6rem;
+                        
+                        }
+                    }
+                }
+                
+           }
+
+        }
+
+}

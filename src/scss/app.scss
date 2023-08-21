@@ -1,0 +1,12 @@
+@use './comp/main1';
+@use './comp/main2';
+@use './comp/main3';
+@use "./variable" as v;
+@import "_mixins";
+
+*{
+    font-family: v.$primary-font;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
