@@ -1,8 +1,9 @@
-@use './comp/main1';
-@use './comp/main2';
-@use './comp/main3';
-@use './comp/main4';
-@use './comp/main5';
+@use './comp/home/main1';
+@use './comp/home/main2';
+@use './comp/home/main3';
+@use './comp/home/main4';
+@use './comp/home/main5';
+@use "./comp/footer";
 @use "./variable" as v;
 @import "_mixins";
 

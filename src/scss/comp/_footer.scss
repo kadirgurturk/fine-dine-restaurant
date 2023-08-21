@@ -1,0 +1,78 @@
+@use "../mixins" as m;
+@use "../variable" as v;
+@use "../media" as media;
+
+
+.footer{
+    background-color: v.$clr-codGray;
+    color: v.$clr-white;
+    @include m.flex_column;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding: 2rem 0;
+    text-align: center;
+    text-decoration: none;
+    h2{
+        
+        font-size: 3.8rem;
+        font-weight: 700;
+    }
+
+    .footer__hours,.footer__location{
+        @include m.flex_column;
+        justify-content: space-between;
+        align-items: center;
+        height: 6rem;
+        margin-top: 3rem;
+    }
+
+    @include media.med {
+        display: grid;
+        grid-template-columns: 10.4rem 1fr;
+        grid-template-rows: repeat(2, max-content);
+        column-gap:8rem;
+        padding-left: 5rem;
+        text-align: left;
+        grid-template-areas: "logo address" ". times";
+      
+        h2{
+            grid-area: logo;
+        }
+
+        .footer__location{
+            grid-area: address;
+        }
+
+        .footer__hours{
+            grid-area: times;
+        }
+    }
+
+    @include media.xl {
+        height: 20rem;
+        display: grid;
+        grid-template-columns: 10.4rem 1fr 1fr;
+        grid-template-areas: "logo address times";
+        column-gap: 7.4rem;
+        padding-left: 5rem;
+        text-align: left;
+      
+        h2{
+            grid-area: logo;
+        }
+
+        .footer__location{
+            grid-area: address;
+        }
+
+        .footer__hours{
+            grid-area: times;
+        }
+    }
+
+
+}

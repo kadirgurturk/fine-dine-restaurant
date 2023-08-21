@@ -4,6 +4,7 @@ import { Main2 } from '../comp/home/Main2'
 import { Main3 } from '../comp/home/Main3'
 import { Main4 } from '../comp/home/Main4'
 import { Main5 } from '../comp/home/Main5'
+import { Footer } from '../comp/Footer'
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <Main3/>
         <Main4/>
         <Main5/>
+        <Footer/>
     </div>
   )
 }
