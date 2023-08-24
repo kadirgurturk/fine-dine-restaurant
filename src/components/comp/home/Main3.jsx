@@ -1,5 +1,5 @@
 
-import { menuItems } from "../../../assets/util";
+import { menuItems } from "../../../util/util";
 import divide from "../../../assets/patterns/pattern-divide.svg"
 
 

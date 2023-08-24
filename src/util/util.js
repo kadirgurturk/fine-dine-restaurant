@@ -1,25 +1,25 @@
 //Menu
-import salmonDesk from './homepage/salmon-desktop-tablet.jpg'
-import salmonMob from './homepage/salmon-mobile.jpg';
+import salmonDesk from '../assets/homepage/salmon-desktop-tablet.jpg'
+import salmonMob from '../assets/homepage/salmon-mobile.jpg';
 
-import beefDesk from './homepage/beef-desktop-tablet.jpg'
-import beefMob from './homepage/beef-mobile.jpg';
+import beefDesk from '../assets/homepage/beef-desktop-tablet.jpg'
+import beefMob from '../assets/homepage/beef-mobile.jpg';
 
-import chocolateDesk from './homepage/chocolate-desktop-tablet.jpg'
-import chocolateMob from './homepage/chocolate-mobile.jpg';
+import chocolateDesk from '../assets/homepage/chocolate-desktop-tablet.jpg'
+import chocolateMob from '../assets/homepage/chocolate-mobile.jpg';
 
 //Events
-import familyDesk from './homepage/family-gathering-desktop.jpg'
-import familyTab from './homepage/family-gathering-tablet.jpg';
-import familyMob from './homepage/family-gathering-mobile.jpg';
+import familyDesk from '../assets/homepage/family-gathering-desktop.jpg'
+import familyTab from '../assets/homepage/family-gathering-tablet.jpg';
+import familyMob from '../assets/homepage/family-gathering-mobile.jpg';
 
-import specialDesk from './homepage/special-events-desktop.jpg'
-import specialTab from './homepage/special-events-tablet.jpg';
-import specialMob from './homepage/special-events-mobile.jpg';
+import specialDesk from '../assets/homepage/special-events-desktop.jpg'
+import specialTab from '../assets/homepage/special-events-tablet.jpg';
+import specialMob from '../assets/homepage/special-events-mobile.jpg';
 
-import socialDesk from './homepage/social-events-desktop.jpg'
-import socialTab from './homepage/social-events-tablet.jpg';
-import socialMob from './homepage/social-events-mobile.jpg';
+import socialDesk from '../assets/homepage/social-events-desktop.jpg'
+import socialTab from '../assets/homepage/social-events-tablet.jpg';
+import socialMob from '../assets/homepage/social-events-mobile.jpg';
 
 export const eventItems = [
     {

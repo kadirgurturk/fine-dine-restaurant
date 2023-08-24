@@ -620,6 +620,73 @@
   }
 }
 
+.main6 {
+  background-image: url("/src/assets/booking/hero-bg-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: hsl(0, 0%, 100%);
+  min-height: 36rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main6 .container {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 25rem;
+  text-align: center;
+}
+.main6 .container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3.5rem;
+}
+.main6 .container h4 {
+  font-size: 3rem;
+  font-weight: 100;
+  margin-bottom: 3rem;
+}
+.main6 .container p {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.9rem;
+}
+@media screen and (min-width: 768px) {
+  .main6 {
+    width: 99vw;
+    background-image: url("/src/assets/booking/hero-bg-tablet.jpg");
+  }
+  .main6 .container h1 {
+    text-align: left;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 3.5rem;
+  }
+  .main6 .container h4 {
+    font-size: 4rem;
+    font-weight: 100;
+    margin-bottom: 3rem;
+  }
+  .main6 .container p {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.9rem;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .main6 {
+    width: 99vw;
+    background-image: url("/src/assets/booking/hero-bg-desktop.jpg");
+  }
+}
+
 .footer {
   background-color: hsl(0, 0%, 7%);
   color: hsl(0, 0%, 100%);
@@ -649,6 +716,7 @@
 }
 @media screen and (min-width: 768px) {
   .footer {
+    height: 25rem;
     display: grid;
     grid-template-columns: 10.4rem 1fr;
     grid-template-rows: repeat(2, max-content);
@@ -670,7 +738,7 @@
 }
 @media screen and (min-width: 1200px) {
   .footer {
-    height: 20rem;
+    height: 17rem;
     display: grid;
     grid-template-columns: 10.4rem 1fr 1fr;
     grid-template-areas: "logo address times";

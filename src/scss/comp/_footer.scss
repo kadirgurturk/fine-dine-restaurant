@@ -31,6 +31,7 @@
     }
 
     @include media.med {
+        height: 25rem;
         display: grid;
         grid-template-columns: 10.4rem 1fr;
         grid-template-rows: repeat(2, max-content);
@@ -53,7 +54,7 @@
     }
 
     @include media.xl {
-        height: 20rem;
+        height: 17rem;
         display: grid;
         grid-template-columns: 10.4rem 1fr 1fr;
         grid-template-areas: "logo address times";

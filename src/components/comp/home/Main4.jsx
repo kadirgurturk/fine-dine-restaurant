@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { eventItems } from "../../../assets/util";
+import { eventItems } from "../../../util/util";
 import { Link } from "react-router-dom"
 
 import lines from "../../../assets/patterns/pattern-lines.svg"

@@ -1,0 +1,70 @@
+@use "../../mixins" as m;
+@use "../../variable" as v;
+@use "../../media" as media;
+
+.main6{
+    background-image: url("/src/assets/booking/hero-bg-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: v.$clr-white;
+    min-height: 36rem;
+    position: relative;
+    @include m.column_center;
+    .container{
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 25rem;
+        text-align: center;
+        h1{
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 3.5rem;
+        }
+        h4{
+            font-size: 3rem;
+            font-weight: 100;
+            margin-bottom: 3rem;
+        }
+        p{
+            width: 100%;
+            font-size: 1.5rem;
+            font-weight: 300;
+            line-height: 1.9rem;
+        }
+    }
+    
+
+    @include media.med {
+        width: 99vw;
+        background-image: url("/src/assets/booking/hero-bg-tablet.jpg");
+        .container{
+        
+            h1{
+                text-align: left;
+                font-size: 4rem;
+                font-weight: 700;
+                margin-bottom: 3.5rem;
+            }
+            h4{
+                font-size: 4rem;
+                font-weight: 100;
+                margin-bottom: 3rem;
+            }
+            p{
+                width: 100%;
+                font-size: 1.5rem;
+                font-weight: 300;
+                line-height: 1.9rem;
+            }
+      }
+
+      @include media.xl {
+        width: 99vw;
+        background-image: url("/src/assets/booking/hero-bg-desktop.jpg");
+
+      }
+}
+}
