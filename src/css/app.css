@@ -848,6 +848,93 @@
   line-height: 156%;
 }
 
+@media screen and (min-width: 1200px) {
+  .main7 {
+    height: 350px;
+  }
+  .main7 .reservation {
+    left: 70%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+  }
+  .main7 .reservation form {
+    background-color: hsl(0, 0%, 100%);
+    margin-top: -13.7rem;
+    margin: -13.7rem auto 0;
+    padding: 2.2rem;
+    box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+    max-width: 54rem;
+    display: grid;
+    row-gap: 1.2rem;
+  }
+  .main7 .reservation form input,
+  .main7 .reservation form select {
+    border: none;
+    border-bottom: 1px solid #8e8e8e;
+  }
+  .main7 .reservation form label,
+  .main7 .reservation form select {
+    font-size: 1.8rem;
+    line-height: 156%;
+    letter-spacing: -0.225px;
+    color: hsl(0, 0%, 7%);
+  }
+  .main7 .reservation form input:focus {
+    border-bottom-color: hsl(0, 0%, 7%);
+  }
+  .main7 .reservation form ::-moz-placeholder {
+    opacity: 0.5;
+  }
+  .main7 .reservation form ::placeholder {
+    opacity: 0.5;
+  }
+  .main7 .reservation form input[name=name],
+  .main7 .reservation form input[name=email] {
+    padding-bottom: 0.5rem;
+    padding-top: 0.8rem;
+    padding-left: 1.6rem;
+    width: 100%;
+    font-size: 1.3rem;
+  }
+  .main7 .reservation form .heading {
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+  .main7 .reservation form fieldset {
+    border: none;
+  }
+  .main7 .reservation form select {
+    opacity: 0.5;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    cursor: inherit;
+    padding: 0.8rem 0 1.6rem 10%;
+  }
+  .main7 .reservation form select:focus {
+    opacity: 1;
+  }
+  .main7 .reservation form .grid {
+    display: grid;
+    grid-template-columns: 12rem 1fr;
+    -moz-column-gap: 5.2rem;
+         column-gap: 5.2rem;
+  }
+  .main7 .reservation form .date-picker,
+  .main7 .reservation form .time-picker {
+    padding-top: 0;
+  }
+  .main7 .reservation form .field-info {
+    align-self: center;
+  }
+  .main7 .reservation form .people {
+    justify-content: space-around;
+  }
+}
 .footer {
   background-color: hsl(0, 0%, 7%);
   color: hsl(0, 0%, 100%);

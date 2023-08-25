@@ -150,6 +150,109 @@
           }
 
     }
+      
+}
 
+@include media.xl{
+  .main7{
+    height: 350px;
+    .reservation{
+
+        left: 70%;
+        top: 35%;
+        transform: translate(-50%, -50%);
+
+        form{
+            background-color: v.$clr-white;
+            margin-top: -13.7rem;
+            margin: -13.7rem auto 0;
+            padding: 2.2rem;
+            box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+            max-width: 54rem;
+        
+            display: grid;
+            row-gap: 1.2rem;
+
+            input,
+            select {
+              border: none;
+              border-bottom: 1px solid #8e8e8e;
+            }
+        
+            label,
+            select {
+              font-size: 1.8rem;
+              line-height: 156%;
+              letter-spacing: -0.225px;
+              color: v.$clr-codGray;
+            }
+        
+            input:focus {
+              border-bottom-color: v.$clr-codGray;
+            }
+        
+            ::placeholder {
+              opacity: 0.5;
+            }
+        
+            input[name="name"],
+            input[name="email"] {
+              padding-bottom: 0.5rem;
+              padding-top: 0.8rem;
+              padding-left: 1.6rem;
+              width: 100%;
+              font-size: 1.3rem;
+            }
+        
+            .heading {
+              font-size: 1.3rem;
+              font-weight: 300;
+            }
+        
+            fieldset {
+              border: none;
+            }
+        
+            select {
+              opacity: 0.5;
+              appearance: none;
+              background-color: transparent;
+              margin: 0;
+              width: 100%;
+              font-family: inherit;
+              cursor: inherit;
+              padding: 0.8rem 0 1.6rem 10%;
             
+              &:focus {
+                opacity: 1;
+              }
+            }
+
+            .grid {
+                display: grid;
+                grid-template-columns: 12rem 1fr;
+                column-gap: 5.2rem;
+            }
+
+            .date-picker,
+            .time-picker {
+                padding-top: 0;
+             
+            }
+            
+            .field-info {
+                align-self: center;
+              }
+          
+              .people {
+                  justify-content: space-around;
+               
+          
+              }
+
+        }
+    
+}    
+
+}
 }
