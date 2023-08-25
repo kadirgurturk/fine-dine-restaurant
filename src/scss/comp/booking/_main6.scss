@@ -65,6 +65,37 @@
         width: 99vw;
         background-image: url("/src/assets/booking/hero-bg-desktop.jpg");
 
+        
+
+
+        .container{
+            width: 35%;
+            top: 50%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+            text-align: left;
+
+            h1{
+                text-align: left;
+                font-size: 4rem;
+                font-weight: 700;
+                margin-bottom: 8.5rem;
+            }
+            h4{
+                font-size: 4.5rem;
+                font-weight: 100;
+                margin-bottom: 2rem;
+            }
+            p{
+                width: 100%;
+                font-size: 1.5rem;
+                font-weight: 200;
+                line-height: 1.9rem;
+            }
       }
+
+      }
+
+
 }
 }

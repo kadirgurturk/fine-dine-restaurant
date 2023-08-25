@@ -685,6 +685,167 @@
     width: 99vw;
     background-image: url("/src/assets/booking/hero-bg-desktop.jpg");
   }
+  .main6 .container {
+    width: 35%;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
+  .main6 .container h1 {
+    text-align: left;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 8.5rem;
+  }
+  .main6 .container h4 {
+    font-size: 4.5rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+  }
+  .main6 .container p {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 1.9rem;
+  }
+}
+
+.main7 {
+  background-color: hsl(0, 0%, 100%);
+  position: relative;
+  height: 650px;
+}
+.main7 .reservation {
+  width: 90%;
+  max-width: 540px;
+  padding-bottom: 8.6rem;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+}
+.main7 .reservation form {
+  background-color: hsl(0, 0%, 100%);
+  margin-top: -13.7rem;
+  margin: -13.7rem auto 0;
+  padding: 2.2rem;
+  box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+  max-width: 54rem;
+  display: grid;
+  row-gap: 1.2rem;
+}
+.main7 .reservation form input,
+.main7 .reservation form select {
+  border: none;
+  border-bottom: 1px solid #8e8e8e;
+}
+.main7 .reservation form label,
+.main7 .reservation form select {
+  font-size: 1.8rem;
+  line-height: 156%;
+  letter-spacing: -0.225px;
+  color: hsl(0, 0%, 7%);
+}
+.main7 .reservation form input:focus {
+  border-bottom-color: hsl(0, 0%, 7%);
+}
+.main7 .reservation form ::-moz-placeholder {
+  opacity: 0.5;
+}
+.main7 .reservation form ::placeholder {
+  opacity: 0.5;
+}
+.main7 .reservation form input[name=name],
+.main7 .reservation form input[name=email] {
+  padding-bottom: 0.5rem;
+  padding-top: 0.8rem;
+  padding-left: 1.6rem;
+  width: 100%;
+  font-size: 1.3rem;
+}
+.main7 .reservation form .heading {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.main7 .reservation form fieldset {
+  border: none;
+}
+.main7 .reservation form select {
+  opacity: 0.5;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  cursor: inherit;
+  padding: 0.8rem 0 1.6rem 10%;
+}
+.main7 .reservation form select:focus {
+  opacity: 1;
+}
+.main7 .reservation form .date-picker,
+.main7 .reservation form .time-picker {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 1.2rem;
+       column-gap: 1.2rem;
+  padding-top: 0.8rem;
+}
+.main7 .reservation form .field-info {
+  align-self: center;
+}
+.main7 .reservation form .people {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #8e8e8e;
+  font-size: 1.4rem;
+  padding-bottom: 1.7rem;
+}
+.main7 .reservation form .math {
+  border: none;
+  background-color: transparent;
+  padding: 0 1.9rem;
+}
+.main7 .reservation form button {
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  padding: 25px;
+  font-size: 1.5rem;
+  width: initial;
+  cursor: pointer;
+}
+.main7 .reservation form button:hover {
+  background-color: white;
+  color: black;
+}
+.main7 .reservation .error-border {
+  border-bottom-color: hsl(0, 43%, 50%);
+}
+.main7 .reservation .error-color {
+  color: hsl(0, 43%, 50%);
+}
+.main7 .reservation .error-message {
+  color: hsl(0, 43%, 50%);
+  padding-top: 1rem;
+  padding-left: 1.6rem;
+  font-size: 1rem;
+  line-height: 100%;
+  transition: 0.3s;
+  font-weight: 500;
+}
+.main7 .reservation .date .error-message,
+.main7 .reservation .time .error-message {
+  padding: 0;
+}
+.main7 .reservation .success-message {
+  color: green;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 156%;
 }
 
 .footer {

@@ -16,7 +16,7 @@ export function Form() {
   } = useForm(validate);
 
   return (
-    <section className="reservation">
+    <div className="reservation">
         <form onSubmit={handleSubmit} id="form" noValidate>
           {isSubmitting && valid ? (
             <small className="success-message">
@@ -65,9 +65,7 @@ export function Form() {
               {errors.date && <p className="error-message">{errors.date}</p>}
             </div>
             <div className="date-picker">
-              <label htmlFor="month" className="sr-only">
-                month
-              </label>
+         
               <div className="select">
                 <select
                   name="month"
@@ -91,9 +89,7 @@ export function Form() {
                   <option value="december">12</option>
                 </select>
               </div>
-              <label htmlFor="day" className="sr-only">
-                day
-              </label>
+    
               <select
                 name="day"
                 id="day"
@@ -134,9 +130,7 @@ export function Form() {
                 <option value="30">30</option>
                 <option value="31">31</option>
               </select>
-              <label htmlFor="year" className="sr-only">
-                year
-              </label>
+          
               <select
                 name="year"
                 id="year"
@@ -164,9 +158,7 @@ export function Form() {
               {errors.time && <p className="error-message">{errors.time}</p>}
             </div>
             <div className="time-picker">
-              <label htmlFor="hour" className="sr-only">
-                hour
-              </label>
+              
               <select
                 name="hour"
                 onChange={handleChange}
@@ -188,9 +180,7 @@ export function Form() {
                 <option value="11">11</option>
                 <option value="12">12</option>
               </select>
-              <label htmlFor="minutes" className="sr-only">
-                minutes
-              </label>
+              
               <select
                 name="minutes"
                 onChange={handleChange}
@@ -203,9 +193,7 @@ export function Form() {
                 <option value="30">30</option>
                 <option value="45">45</option>
               </select>
-              <label htmlFor="period" className="sr-only">
-                am or pm
-              </label>
+              
               <select
                 name="period"
                 id="period"
@@ -229,7 +217,6 @@ export function Form() {
                 <path fill="#9E7F66" d="M6.425 2.977V.601H.629v2.376z" />
               </svg>
               <span className="sr-only">
-                Click to remove people from the reservation
               </span>
             </button>
             <strong name="people">
@@ -248,7 +235,6 @@ export function Form() {
                 />
               </svg>
               <span className="sr-only">
-                Click to add more people to the reservation
               </span>
             </button>
           </div>
@@ -256,6 +242,6 @@ export function Form() {
             Make Reservation
           </button>
         </form>
-    </section>
+    </div>
   );
 }
